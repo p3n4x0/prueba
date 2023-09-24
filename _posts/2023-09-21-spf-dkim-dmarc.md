@@ -7,7 +7,7 @@ classes: Teoria
 header:
   teaser: /assets/images/ingenieria_social/correo_logo.PNG
   teaser_home_page: true
-  icon: /assets/images/tryhackme.svg
+  icon: /assets/images/ciber.png
 categories:
   - teoria
 tags:
