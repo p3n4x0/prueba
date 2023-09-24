@@ -24,7 +24,7 @@ tags:
 
 Esta sala es realmente interesante ya que vas a explotar diferentes tipos de escalada de privilegios, desde PATH hijacking, Python Library Hijacking, análisis de binarios y capacidades setuid que te harán pasar horizontalmente de usuario en usuario hasta llegar a root.
 # Enumeración
----
+
 Comenzamos lanzando nmap para ver que servicios están corriendo en la maquina.
 ```bash
 nmap -p- -Pn -sCV --min-rate 5000 10.10.253.220 -oG nmap
@@ -43,7 +43,7 @@ Nos fijamos en el puerto 80 y pasamos a analizarlo mas en profundiad...
 ![](/assets/images/thm_wonderland/thm_wonderland_nmap.PNG)
 
 # Servicio HTTP
----
+
 ![](/assets/images/thm_wonderland/thm_wonderland_page.PNG)
 
 en el código fuente de la pagina tampoco se aprecia nada destacable
@@ -103,7 +103,7 @@ Hasta encontrarnos con `/r/a/b/b/i/t/`
 Como se puede apreciar encontramos las credenciales del usuario ***alice*** que pasaremos a probar en el servicio ssh
 
 # Servicio SSH
----
+
 ![](/assets/images/thm_wonderland/thm_wonderland_ssh.PNG)
 
 Ya hemos conseguido entrar a la maquina ahora buscaremos nuestra ansiada flag `user.txt`
@@ -142,7 +142,7 @@ for i in range(10):
     print("The line was:\t", line)
 ```
 # Escalada de privilegios nº1
----
+
 Muy bien, ya tenemos nuestra flag de `user.txt`... ahora toca obtener privilegios máximos en la maquina es decir, ser `root`
 
 Lo primero que hago es mirar `sudo -l` .
@@ -186,7 +186,7 @@ sudo -u rabbit /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
 
 
 # Escalada de privilegios nº2
----
+
 ![](/assets/images/thm_wonderland/thm_wonderland_ll2.PNG)
 
 Ya tenemos acceso como el usuario rabbit, podemos ver que el binario `teaParty`  tiene permisos de `SUID` y `SGID` siendo el usuario y el grupo `root`
@@ -220,7 +220,7 @@ Contenido del fichero `date`:
 ![](/assets/images/thm_wonderland/thm_wonderland_date.PNG)
 
 # Escalada de privilegios nº3
----
+
 Nos encontramos con el fichero `password.txt`
 
 ![](/assets/images/thm_wonderland/thm_wonderland_sudo2.PNG)
