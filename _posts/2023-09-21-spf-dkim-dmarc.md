@@ -16,6 +16,8 @@ tags:
 
 ![](/assets/images/ingenieria_social/correo_logo.PNG)
 
+El SPF (Sender Policy Framework) valida los servidores autorizados para enviar correos desde un dominio. DKIM (DomainKeys Identified Mail) firma digitalmente correos para garantizar autenticidad e integridad. DMARC (Domain-based Message Authentication, Reporting, and Conformance) combina SPF y DKIM, reduciendo el riesgo de phishing y spoofing. Estas medidas son esenciales en ciberseguridad para proteger la marca y prevenir ataques de correo malicioso.
+
 # SPF (Sender Policy Framework)
 Permite al propietario de un dominio especificar qué servidores están autorizados a enviar correos electrónicos con su dominio en el “Mail From: email address”. Ofrece la posibilidad a los receptores de consultar los DNS para obtener el listado de autorizados para un dominio en concreto. Si el mensaje de correo procede de un servidor autorizado, el receptor puede asumir la autenticidad del mensaje.
 
