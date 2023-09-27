@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Wonderland - Try Hack Me
+title: Wonderland - Try Hack Me - WriteUp
 excerpt: "Esta sala es realmente interesante ya que vas a explotar diferentes tipos de escalada de privilegios, desde PATH hijacking, Python Library Hijacking, análisis de binarios y capacidades setuid que te harán pasar horizontalmente de usuario en usuario hasta llegar a root."
 date: 2023-09-23
 classes: Medium
@@ -17,6 +17,8 @@ tags:
   - pyhton library hijacking
   - capabilities
   - privilage escalation
+  - writeup
+  - walkthrough
 ---
 > Dificultad: Media
 
